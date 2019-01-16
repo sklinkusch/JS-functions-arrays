@@ -26,9 +26,9 @@ const capitalFirstLett = quote => {
 };
 console.log(capitalFirstLett2(stringQuote));*/
 
-const captialVeryShort = quote =>
+const capitalVeryShort = quote =>
   quote
     .split(" ")
     .map(word => word.charAt(0).toUpperCase() + word.slice(1))
     .join(" ");
-console.log(captialVeryShort(stringQuote));
+console.log(capitalVeryShort(stringQuote));
