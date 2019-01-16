@@ -16,7 +16,7 @@ const capitalFirstLett = quote => {
 
 // console.log(capitalFirstLett(stringQuote));
 
-const capitalFirstLett2 = quote => {
+/*const capitalFirstLett2 = quote => {
   const words = quote.split(" ");
   const WORDS = words.map(x => {
     return `${x.charAt(0).toUpperCase()}${x.slice(1)}`;
@@ -24,4 +24,11 @@ const capitalFirstLett2 = quote => {
   sentence = WORDS.join(" ");
   return sentence;
 };
-console.log(capitalFirstLett2(stringQuote));
+console.log(capitalFirstLett2(stringQuote));*/
+
+const captialVeryShort = quote =>
+  quote
+    .split(" ")
+    .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(" ");
+console.log(captialVeryShort(stringQuote));
