@@ -14,4 +14,16 @@ const capitalFirstLett = quote => {
   return sentence;
 };
 
-console.log(capitalFirstLett(stringQuote));
+// console.log(capitalFirstLett(stringQuote));
+
+const capitalFirstLett2 = quote => {
+  const words = quote.split(" ");
+  const WORDS = words.map(x => {
+    beginning = x.charAt(0).toUpperCase();
+    end = x.slice(1);
+    return `${beginning}${end}`;
+  });
+  sentence = WORDS.join(" ");
+  return sentence;
+};
+console.log(capitalFirstLett2(stringQuote));
